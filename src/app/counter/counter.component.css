@@ -17,6 +17,7 @@ button {
   font-weight: 500;
   margin-inline: 5px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 button:first-child {
@@ -29,4 +30,11 @@ button:nth-child(2) {
 
 button:last-child {
   background-color: orange;
+}
+
+@media only screen and (max-width:500px){
+
+  #count {
+    margin-block: 20px;
+  }
 }

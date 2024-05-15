@@ -1,9 +1,9 @@
 <!-- <p>counter works!</p> -->
 <div class="container">
-  <h2 id="count">0</h2>
+  <h2 id="count">{{(count$) ? (count$ | async) : 8}}</h2>
   <div>
-    <button>Increment</button>
-    <button>Decrement</button>
-    <button>Reset</button>
+    <button (click)="increment()">Increment</button>
+    <button (click)="decrement()">Decrement</button>
+    <button (click)="reset()">Reset</button>
   </div>
 </div>
